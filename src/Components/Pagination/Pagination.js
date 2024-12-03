@@ -8,8 +8,8 @@ const Pagination = ({ totalPosts, postsPerPage, setCurrentPage, currentPage }) =
 
   // Define the range of pages to display around the current page (2 pages before and 2 pages after)
   const pageLimit = 2; // Number of pages to show before and after the current page
-  let startPage = currentPage - pageLimit;
-  let endPage = currentPage + pageLimit;
+  let startPage = currentPage *pageLimit;
+  let endPage = currentPage * pageLimit;
 
   // Ensure the page range stays within bounds
   if (startPage < 1) startPage = 1;
