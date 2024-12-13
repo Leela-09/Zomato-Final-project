@@ -271,7 +271,7 @@ function Restaurant() {
         </div>
         <div className="col-4 d-flex mb-3 justify-content-end">
           <div className="menu-food-item align-items-center">
-            <img src={"/Image/"+ menu.image} alt="" />
+            <img src={process.env.PUBLIC_URL + "/Image/"+ menu.image} alt="" />
 
             {
               (menu.qty === 0) ? (
@@ -358,7 +358,7 @@ function Restaurant() {
                 {rDetails.thumb.map((value, index) => {
                   return (
                     <div key={index} className="w-100">
-                      <img src={"/Image/" + value} alt="" />
+                      <img src={process.env.PUBLIC_URL + "/Image/" + value} alt="" />
                     </div>
                   );
                 })}
@@ -376,7 +376,7 @@ function Restaurant() {
           <div className="row">
             <div className="col-12 mt-2">
               <div className="restaurant-main-image position-relative">
-                <img src={"/Image/" + rDetails.image} alt="" className="" />
+                <img src={process.env.PUBLIC_URL + "/Image/" + rDetails.image} alt="" className="" />
                 <button
                   className="btn btn-outline-light position-absolute btn-gallery"
                   data-bs-toggle="modal"

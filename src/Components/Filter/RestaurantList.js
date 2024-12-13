@@ -32,7 +32,7 @@ function RestaurantList({ restaurantList }) {
                 >
                   <div className="d-flex align-items-center">
                     <img
-                      src={"/Image/" + restaurant.image}
+                      src={process.env.PUBLIC_URL + "/Image/" + restaurant.image}
                       className="food-item"
                       alt=""
                     />
